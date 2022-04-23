@@ -1,10 +1,10 @@
-const Definition = () =>{
-
+const Definition = (props) =>{
+    const {word,wordDefiniton } = props
     return(
-        <>
-        <h2>word</h2>
-        <p> definition</p>
-        </>
+        <div>
+        <h2>{word}</h2>
+        <p> {wordDefiniton}</p>
+        </div>
     )
 
 }
