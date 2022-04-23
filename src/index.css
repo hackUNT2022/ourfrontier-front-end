@@ -1,3 +1,7 @@
+html {
+  overflow: scroll;
+}
+/* CSS RESET */
 /* Box sizing rules */
 *,
 *::before,
