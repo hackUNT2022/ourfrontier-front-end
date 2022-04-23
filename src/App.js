@@ -11,7 +11,7 @@ const planet_pictures = [
 function App() {
   return (
     <div className="App App__background">
-      <Planet image={planet_pictures[2]} name={"Mars"}/>
+
     </div>
   );
 }
