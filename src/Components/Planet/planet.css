@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Special+Elite&display=swap');
 
 .Planet__container {
   height: 100vh;
@@ -40,5 +40,17 @@
 .Planet__container-bottom {
   width: 100%;
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.Planet__info_card {
+  width: 70%;
+  height: 80%;
+  background-color: #f9f9f3;
+  border-radius: 20px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  padding: 1rem;
 }

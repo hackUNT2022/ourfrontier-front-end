@@ -5,7 +5,7 @@ import "./planet.css"
 
 const Planet = ({name, image}) => {
   return (
-    <div className='Planet__container'>
+    <section className='Planet__container' id={name}> 
       <div className='Planet__container-top'>
         <div className='Planet__image-container'>
           <img className='Planet__image' src={image} alt={`The planet ${name}`}/>
@@ -19,9 +19,11 @@ const Planet = ({name, image}) => {
         </div>
       </div>
       <div className='Planet__container-bottom'>
-        <h1>Bottom Container</h1>
+        <div className='Planet__info_card'> 
+          <h2>Additional Info</h2>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
