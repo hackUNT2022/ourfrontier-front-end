@@ -32,3 +32,14 @@
 .def:active{
     color: green;
 }
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}

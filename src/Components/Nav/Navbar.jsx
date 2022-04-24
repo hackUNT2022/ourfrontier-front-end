@@ -7,10 +7,12 @@ const Navbar = () => {
 
     return(
         <div className="Nav">
-            <img src={Logo} alt="Our Frontier Logo" className='logo'/>
-            <h1>Our Frontier</h1>
+            <a href="/">
+                <img src={Logo} alt="Our Frontier Logo" className='logo'/>
+                <h1>Our Frontier</h1>
+            </a>
         </div>
     )
 }
 
-export default Navbar;git 
+export default Navbar;
