@@ -1,75 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
-.calculator-header {
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-.main-heading {
-    color: white;
-    font-family: 'Space Mono';
+.Calculator__container {
+  height: 100vh;
+  width: auto;
+  color: white;
 }
 
-.subheading {
-    color: white;
-    font-family: 'Space Mono';
-}
-.calculator-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.calculator-body {
-    display: flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.body-left {
-    display: flex;
-    gap: 3em;
-}
-
-.distance {
-    display: flex;
-    height: min-content;
-    align-items: flex-end;
-}
-
-.distance-conversion {
-    display: flex;
-    height: min-content;
-    align-items: flex-start;
-}
-
-.in-holder {
-    display: flex;
-    align-items: flex-start;
-    height: min-content;
+.Calculator__title_container {
+  display: flex;
+  justify-content: center;
 }
 
 
-label {
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Space Mono';
+.Calculator__content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.body-right {
-    margin-left: auto;
+.Presets__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.results {
-    color: white;
-    margin-left: auto;
-}
-.button-list {
-    display: flex;
-    gap: 1em;
-    padding: 0;
-    flex-direction: column;
+.Presets__container > button {
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  margin: 0.25rem;
 }
 
-.button-list button {
-    border: 0;
-    border-radius: 30px;
+.Calculator__input-button {
+  width: 100px;
+  margin: 0.5rem;
+
 }
+
+.Calculator__content-right {
+  width: 50%;
+  height: 100%;
+}
+

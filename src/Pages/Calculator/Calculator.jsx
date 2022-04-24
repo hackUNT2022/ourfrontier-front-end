@@ -1,69 +1,115 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Dropdown } from '../../Components/Dropdown/Dropdown';
 import './Calculator.css';
 
 const Calculator = () => {
-    const [units, setUnits] = useState('');
-    const [convUnits, setConvUnits] = useState('');
-    const [result, setResult] = useState(0);
 
-    const childToParent = (childData) => {
-        childData ==='Football Fields' || childData === 'Olympic Swimming Pools' ? 
-        setConvUnits(childData) :
-        setUnits(childData);
-    }
+  const [output, setOutput] = useState('')
+  const [terms, setTerms] = useState('')
 
-    const handleChange = event => {
-        setResult(event.target.value);
-    }
+  const myRef = useRef(null);
 
-    return (
-        <div className='calculator-container'>
-            <div className='calculator-header'>
-                <h1 className='main-heading'>Travel Distance Calculator</h1>
-            </div>
-            <div className='calculator-body'>
-                <div className='body-left'>
-                    <div className='distance'>
-                        <form>
-                            <label htmlFor='distance_id'>Distance</label><br></br>
-                            <input placeholder='Enter Value' onChange={handleChange}type='text' id='distance_id' fname='distance_id'></input>
-                            <button type='submit'>Submit</button>
-                        </form>
-                        <div className="drop-holder">
-                        <Dropdown items={["miles", "kilometers"]} name={'Units'} childToParent={childToParent}/>
-                        </div>
-                    </div>
-                    <div className='in-holder'>
-                        <h2 className='subheading'>In</h2>
-                    </div>
-                    <div className='distance-conversion'>
-                        <div className='drop-holder'>
-                            <Dropdown items={["Football Fields", "Olympic Swimming Pools"]} name={'Choose Conversion Units'} childToParent={childToParent} />
-                        </div>
-                    </div>
-                </div>
-                <div className='body-right'>
-                    <form>
-                        <h2 className='subheading'>Presets</h2>
-                        <ul className='button-list'>
-                            <button style={{background: "#d3d3d3"}}>Mercury</button>
-                            <button style={{background: "#f2ba49"}}>Venus</button>
-                            <button style={{background: "#228b22"}}>Earth</button>
-                            <button style={{background: "#934838"}}>Mars</button>
-                            <button style={{background: "#ff7f50"}}>Jupiter</button>
-                            <button style={{background: "#ffffbf"}}>Saturn</button>
-                            <button style={{background: "#f8f8ff"}}>Uranus</button>
-                            <button style={{background: "#0080ff"}}>Neptune</button>
-                        </ul>
-                    </form>
-                </div>
-                <div className='results'>
-                    {result}
-                </div>
-            </div>
+  return (
+      <div className='Calculator__container'>
+        <div className="Calculator__title_container">
+          <h1 className='Calculator__title'>Travel Distance Calculator</h1>
         </div>
-    )
+        <div className='Calculator__content'>
+            <div className='Presets__container'>
+              <button style={{background: "#d3d3d3"}} 
+                onClick={() => { 
+                  myRef.current.value = 89866000 
+                  setOutput(myRef.current.value)
+                }}
+               >
+                 Mercury
+               </button>
+              <button style={{background: "#f2ba49"}}
+                onClick={() => { 
+                  myRef.current.value = 88365000 
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Venus
+              </button>
+              <button style={{background: "#228b22"}}
+                onClick={() => { 
+                  myRef.current.value = 0 
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Earth
+              </button>
+              <button style={{background: "#934838"}}
+                onClick={() => {
+                  myRef.current.value = 155500000
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Mars
+              </button>
+              <button style={{background: "#ff7f50"}}
+                onClick={() => {
+                  myRef.current.value = 532660000
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Jupiter
+              </button>
+              <button style={{background: "#ffffbf"}}
+                onClick={() => {
+                  myRef.current.value = 945530000
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Saturn
+              </button>
+              <button style={{background: "#f8f8ff"}}
+                onClick={() => {
+                  myRef.current.value = 1923400000
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Uranus
+              </button>
+              <button style={{background: "#0080ff"}}
+                onClick={() => {
+                  myRef.current.value = 2851200000
+                  setOutput(myRef.current.value)
+                }}
+              >
+                Neptune
+              </button>
+            </div>
+            <h2 >Distance (mi)</h2>
+
+    
+            <input 
+              ref={myRef}  
+              className='Calculator__input' 
+              type="text" 
+              placeholder="135"
+              onChange={()=> setOutput(myRef.current.value)}
+            />
+            <h2>In terms of...</h2>
+            <div className='Options__container'>
+              <button className='Calculator__input-button' onClick={()=> setTerms(17.6)}>
+                <img src='https://www.svgrepo.com/show/219532/american-football-field.svg' alt='Football Field' />
+              </button>
+              <button className='Calculator__input-button' onClick={()=> setTerms(16.09)}>
+                <img src='https://images.vexels.com/media/users/3/211681/isolated/preview/f635de764b1c111ef4c56cb4b3916617-swimming-pool-flat.png' alt='olympic swimming pool' />
+              </button>
+            </div>
+            <div className='Results__container'>
+              <h1>{terms && output && `The value is ${(output*terms).toFixed(3)}`}
+                  {(terms === 17.6) ? " football fields" : terms && " swimming pools" }
+              </h1>
+            </div>
+            
+        </div>
+        
+      </div>
+  )
 }
 
 export default Calculator
