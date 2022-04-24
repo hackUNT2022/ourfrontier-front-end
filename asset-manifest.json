@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ourfrontier-front-end/static/css/main.d674e299.css",
-    "main.js": "/ourfrontier-front-end/static/js/main.54984164.js",
+    "main.css": "/ourfrontier-front-end/static/css/main.148a1ab9.css",
+    "main.js": "/ourfrontier-front-end/static/js/main.c252a7fd.js",
     "static/media/stars.png": "/ourfrontier-front-end/static/media/stars.90c266f7d69f1ffb6137.png",
     "static/media/Circle.svg": "/ourfrontier-front-end/static/media/Circle.04455e085fdc04a00de3c0c0100316c5.svg",
     "index.html": "/ourfrontier-front-end/index.html",
     "static/media/Logo.svg": "/ourfrontier-front-end/static/media/Logo.2ec1ba9e609c16e6fe36f2aa7a6ee9c8.svg",
-    "main.d674e299.css.map": "/ourfrontier-front-end/static/css/main.d674e299.css.map",
-    "main.54984164.js.map": "/ourfrontier-front-end/static/js/main.54984164.js.map"
+    "main.148a1ab9.css.map": "/ourfrontier-front-end/static/css/main.148a1ab9.css.map",
+    "main.c252a7fd.js.map": "/ourfrontier-front-end/static/js/main.c252a7fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.d674e299.css",
-    "static/js/main.54984164.js"
+    "static/css/main.148a1ab9.css",
+    "static/js/main.c252a7fd.js"
   ]
 }
