@@ -1,8 +1,7 @@
 {
   "name": "ourfrontier",
-  "homepage": "https://github.com/hackUNT2022/ourfrontier-front-end",
   "version": "0.1.0",
-  "homepage": "https://hackunt2022.github.io/ourfrontier-front-end",
+  "homepage": "https://ourfrontier.tech",
   "private": true,
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.32",
