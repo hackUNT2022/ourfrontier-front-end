@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path='/' element={<SolarTour />} />
           <Route path='/glossary' element={<Glossary />} />
-          <Route path='iss' element={<ISS />} />
-          <Route path='calculator' element={<Calculator />} />
+          <Route path='/iss' element={<ISS />} />
+          <Route path='/calculator' element={<Calculator />} />
         </Routes>
       </Router>
     </div>
