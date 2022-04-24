@@ -10,9 +10,6 @@ const Planet = ({name, image}) => {
   const [index, setIndex] = useState(0);
   const [planetData,setPlanetData] = useState([0,0,0,0,0])
 
-  const displayGas = (parameter) => {
-
-  }
   const interval = setInterval(() => {
       setTime(Date.now())
       setIndex(index+2)
@@ -119,8 +116,8 @@ const Planet = ({name, image}) => {
       <div className='Planet__container-bottom'>
         <div className='Planet__info_card'> 
           <h2>Additional Info</h2>
-          <span className='Planet__info_gas'>Average Gallons of Gas To Travel: </span> {`${(data[index].value/25.4).toFixed(2)}`}<br></br>
-          <span className='Planet__info_cost'>Estimated Cost of Gas: </span> {`${(data[index].value/25.4 * 3.780).toFixed(2)}`}
+          <span className='Planet__info'>Average Gallons of Gas To Travel: </span> {`${(data[index].value/25.4).toFixed(2)}`}<br></br>
+          <span className='Planet__info'>Estimated Cost of Gas: </span> {`${(data[index].value/25.4 * 3.780).toFixed(2)}`}
           <p>{blurbs[name]}</p>
         </div>
         
