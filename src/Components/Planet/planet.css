@@ -58,3 +58,11 @@
   color: #000;
   padding: 1rem;
 }
+
+.Planet__info_gas {
+  font-weight: bold;
+}
+
+.Planet__info_cost {
+  font-weight: bold;
+}
