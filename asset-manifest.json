@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ourfrontier-front-end/static/css/main.1f049d3d.css",
-    "main.js": "/ourfrontier-front-end/static/js/main.80bc994e.js",
+    "main.js": "/ourfrontier-front-end/static/js/main.8ee92e4b.js",
     "static/media/stars.png": "/ourfrontier-front-end/static/media/stars.90c266f7d69f1ffb6137.png",
     "static/media/Circle.svg": "/ourfrontier-front-end/static/media/Circle.04455e085fdc04a00de3c0c0100316c5.svg",
     "index.html": "/ourfrontier-front-end/index.html",
     "static/media/Logo.svg": "/ourfrontier-front-end/static/media/Logo.2ec1ba9e609c16e6fe36f2aa7a6ee9c8.svg",
     "main.1f049d3d.css.map": "/ourfrontier-front-end/static/css/main.1f049d3d.css.map",
-    "main.80bc994e.js.map": "/ourfrontier-front-end/static/js/main.80bc994e.js.map"
+    "main.8ee92e4b.js.map": "/ourfrontier-front-end/static/js/main.8ee92e4b.js.map"
   },
   "entrypoints": [
     "static/css/main.1f049d3d.css",
-    "static/js/main.80bc994e.js"
+    "static/js/main.8ee92e4b.js"
   ]
 }
