@@ -14,7 +14,7 @@ const SolarSystem = () =>{
             <a href="#Sun">
                 <img src={Circle} alt="The Sun" className=" circle sun" />
             </a>
-            <a href="#Mecury">
+            <a href="#Mercury">
                 <img src={Circle}  alt="Mecury" className=" circle mercury" />
             </a>
             <a href="#Venus">
