@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<SolarTour />} />
+          <Route path='*' element={<SolarTour />} />
           <Route path='/glossary' element={<Glossary />} />
           <Route path='/iss' element={<ISS />} />
           <Route path='/calculator' element={<Calculator />} />
