@@ -9,8 +9,8 @@ import Calculator from './Pages/Calculator/Calculator';
 function App() {
   return (
     <div className="App App__background">
-      <Navbar/>
       <Router>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<SolarTour />} />
           <Route path='/glossary' element={<Glossary />} />

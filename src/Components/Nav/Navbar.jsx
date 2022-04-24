@@ -1,6 +1,7 @@
 import Logo from '../../assets/SVG/Logo.svg'
 import "./Navbar.css"
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return(
@@ -12,7 +13,11 @@ const Navbar = () => {
               </a>
             </div>
             <div className='Nav__menu'>
-              
+              <div className='Nav__menu_links'>
+                <Link to="/calculator">Distance Calculator</Link>
+                <Link to="/iss">ISS</Link>
+                <Link to="/glossary">Glossary</Link>
+              </div>
             </div>
         </div>
     )
