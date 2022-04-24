@@ -1,7 +1,7 @@
 .solar-system {
     display: flex;
     overflow: hidden;
-    height: 50vw;
+    height: 52vw;
 }
 
 @keyframes slideInFromLeft {

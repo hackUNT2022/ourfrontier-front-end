@@ -4,13 +4,17 @@ import axios from 'axios'
 
 
 const Planet = ({name, image}) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([0]);
   const [time, setTime] = useState(Date.now());
   const [index, setIndex] = useState(0);
+  const [planetData,setPlanetData] = useState([0,0,0,0,0])
+
+  const interval = setInterval(() => {
+      setTime(Date.now())
+      setIndex(index+2)
+    }, 2000)
 
   useEffect(() => {
-    const interval = setInterval(() => setTime(Date.now()), 1000)
-    setIndex(index+1)
     console.log("hi")
     return () => {
       clearInterval(interval)
@@ -19,7 +23,7 @@ const Planet = ({name, image}) => {
 
   const instance = axios.create({
     baseURL: 'http://abnormaltech.net',
-    timeout: 2000,
+    timeout: 5000,
   })
 
   const getDistanceBetweenCelestialBodies = async (b1, b2) =>  {
@@ -62,7 +66,7 @@ const Planet = ({name, image}) => {
     instance.get(route)
     .then(function (response) {
       // handle success
-      setData(...response.data.items)
+      setData(response.data.items)
     })
     .catch(function (error) {
       // handle error
@@ -72,8 +76,22 @@ const Planet = ({name, image}) => {
     console.log(data)
   }
 
+ 
+
   useEffect(() => {
     getDistanceBetweenCelestialBodies(name, "earth")
+     instance.get('/bodies')
+    .then((response) =>{
+      let pData = response.data;
+      for(const body in pData)
+      {
+        if (pData[body][0] == name){
+          setPlanetData(pData[body])
+          console.log(pData[body])
+        }
+      }
+
+    })
   }, [])
 
   useEffect(() => {
@@ -88,9 +106,10 @@ const Planet = ({name, image}) => {
         </div>
         <div className='Planet__stats-container'>
           <h1>{name}</h1>
-          <h3>{`Distance from Earth: ${name}`}</h3>
-          <h3>{`Weather: ${name}`}</h3>
-          <h3>{`Distance from the Earth: ${index} KM`}</h3>
+          <h3>{`Classification: Planet`}</h3>
+          <h3>{`Mass: ${planetData[2]["massValue"] * 10 ** planetData[2]["massExponent"]}kg`}</h3>
+          <h3>{`Distance from the Earth: ${data[index].value} KM`}</h3>
+          <h3>{`Escape Velocity: ${planetData[5]} m/s`}</h3>
         </div>
       </div>
       <div className='Planet__container-bottom'>
