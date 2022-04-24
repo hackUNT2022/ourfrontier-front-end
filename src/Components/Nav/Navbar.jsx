@@ -7,7 +7,7 @@ const Navbar = () => {
     return(
         <div className="Nav">
             <div className='Nav__title'>
-              <a href="/">
+              <a href="/ourfrontier-front-end">
                   <img src={Logo} alt="Our Frontier Logo" className='logo'/>
                   <h1>Our Frontier</h1>
               </a>
