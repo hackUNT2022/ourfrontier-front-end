@@ -1,0 +1,128 @@
+.solar-system {
+    display: flex;
+    overflow: hidden;
+    height: 50vw;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-2000%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.circle {
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    position: relative;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(313deg) brightness(105%) contrast(103%);
+}
+
+
+
+
+
+.notice {
+    color: white;
+    text-align: right;
+    margin: 0% 01%;
+}
+
+.sun {
+    height: 209.076371vh;
+    right: 90%;
+
+}
+
+.mercury {
+    height: 3.8vh;
+    right: 39vw;
+}
+
+.venus {
+    height: 9.4vh;
+    right: 38vw;
+}
+
+.earth {
+    height: 10vh;
+    right: 37vw;
+}
+
+.mars {
+    height: 5.3vh;
+    right: 36vw;
+}
+
+.jupiter {
+    height: 80.45vh;
+    right: 35vw;
+}
+
+.saturn {
+    height: 70.12vh;
+    right: 30vw;
+}
+
+.uranus {
+    height: 39.76vh;
+    right: 20vw;
+}
+
+.neptune {
+    height: 38.6vh;
+    right: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sun:hover {
+
+    filter: invert(99%) sepia(87%) saturate(6172%) hue-rotate(350deg) brightness(100%) contrast(106%);
+}
+
+.mercury:hover {
+    filter: invert(33%) sepia(95%) saturate(7180%) hue-rotate(357deg) brightness(107%) contrast(117%);
+}
+
+.venus:hover {
+    filter: invert(21%) sepia(75%) saturate(5431%) hue-rotate(321deg) brightness(97%) contrast(120%);
+}
+
+.earth:hover {
+    filter: invert(51%) sepia(97%) saturate(704%) hue-rotate(77deg) brightness(97%) contrast(98%)
+}
+
+.mars:hover {
+    filter: invert(50%) sepia(93%) saturate(1680%) hue-rotate(1deg) brightness(104%) contrast(104%);
+}
+
+.jupiter:hover {
+    filter: invert(27%) sepia(98%) saturate(620%) hue-rotate(359deg) brightness(94%) contrast(104%);
+}
+
+.saturn:hover {
+    filter: invert(53%) sepia(44%) saturate(5185%) hue-rotate(291deg) brightness(104%) contrast(102%);
+}
+
+.uranus:hover {
+    filter: invert(13%) sepia(79%) saturate(5973%) hue-rotate(275deg) brightness(102%) contrast(125%);
+}
+
+.neptune:hover {
+    filter: invert(8%) sepia(100%) saturate(6979%) hue-rotate(248deg) brightness(103%) contrast(145%);
+}

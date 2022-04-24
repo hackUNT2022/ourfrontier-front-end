@@ -2,6 +2,7 @@ import './App.css'
 import Glossary from './Pages/Glossary/Glossary'
 import Planet from './Components/Planet/Planet';
 import Navbar from './Components/Nav/Navbar'
+import SolarSystem from './Components/SolarSystem/SolarSystem';
 
 const planet_pictures = [
   "https://www.nasa.gov/images/content/607196main_messenger_orbit_image20111130_1_4by3_946-710.jpg",
@@ -16,6 +17,7 @@ function App() {
     <div className="App App__background">
       <Navbar/>
       {/* Landing goes here */}
+      <SolarSystem />
       <Planet name={"Mercury"} image={planet_pictures[0] } />
       <Planet name={"Venus"} image={planet_pictures[1] } />
       <Planet name={"Earth"} image={planet_pictures[2] } />
@@ -24,7 +26,6 @@ function App() {
       <Planet name={"Saturn"} image={planet_pictures[5] } />
       <Planet name={"Uranus"} image={planet_pictures[6] } />
       <Planet name={"Neptune"} image={planet_pictures[7] } />
-
 
     </div>
   );
