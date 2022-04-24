@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.calculator-header {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.main-heading {
+    color: white;
+    font-family: 'Space Mono';
+}
+
+.subheading {
+    color: white;
+    font-family: 'Space Mono';
+}
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-body {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.body-left {
+    display: flex;
+    gap: 3em;
+}
+
+.distance {
+    display: flex;
+    height: min-content;
+    align-items: flex-end;
+}
+
+.distance-conversion {
+    display: flex;
+    height: min-content;
+    align-items: flex-start;
+}
+
+.in-holder {
+    display: flex;
+    align-items: flex-start;
+    height: min-content;
+}
+
+
+label {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Space Mono';
+}
+
+.body-right {
+    margin-left: auto;
+}
+
+.results {
+    color: white;
+    margin-left: auto;
+}
+.button-list {
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    flex-direction: column;
+}
+
+.button-list button {
+    border: 0;
+    border-radius: 30px;
+}

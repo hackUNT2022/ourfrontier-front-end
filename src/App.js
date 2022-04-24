@@ -3,6 +3,7 @@ import Glossary from './Pages/Glossary/Glossary'
 import Planet from './Components/Planet/Planet';
 import Navbar from './Components/Nav/Navbar'
 import SolarSystem from './Components/SolarSystem/SolarSystem';
+import Calculator from './Pages/Calculator/Calculator';
 
 const planet_pictures = [
   "https://www.nasa.gov/images/content/607196main_messenger_orbit_image20111130_1_4by3_946-710.jpg",
@@ -15,9 +16,9 @@ const planet_pictures = [
 function App() {
   return (
     <div className="App App__background">
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* Landing goes here */}
-      <SolarSystem />
+      {/* <SolarSystem />
       <Planet name={"Mercury"} image={planet_pictures[0] } />
       <Planet name={"Venus"} image={planet_pictures[1] } />
       <Planet name={"Earth"} image={planet_pictures[2] } />
@@ -25,7 +26,8 @@ function App() {
       <Planet name={"Jupiter"} image={planet_pictures[4] } />
       <Planet name={"Saturn"} image={planet_pictures[5] } />
       <Planet name={"Uranus"} image={planet_pictures[6] } />
-      <Planet name={"Neptune"} image={planet_pictures[7] } />
+      <Planet name={"Neptune"} image={planet_pictures[7] } /> */}
+      <Calculator />
     </div>
   );
 }
