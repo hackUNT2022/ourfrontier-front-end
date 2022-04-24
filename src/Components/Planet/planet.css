@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Special+Elite&display=swap');
 
 .Planet__container {
+  font-size: 1.6em;
   height: 100vh;
   width: auto;
   display: flex;
