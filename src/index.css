@@ -1,5 +1,6 @@
 html {
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 /* CSS RESET */
 /* Box sizing rules */

@@ -26,7 +26,6 @@ function App() {
       <Planet name={"Saturn"} image={planet_pictures[5] } />
       <Planet name={"Uranus"} image={planet_pictures[6] } />
       <Planet name={"Neptune"} image={planet_pictures[7] } />
-
     </div>
   );
 }
