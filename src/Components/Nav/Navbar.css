@@ -14,7 +14,15 @@
     transition: all 1000s ease-out;
 }
 
+.Nav__title {
+  width: 50%;
+}
 
-
-
+.Nav__menu {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
 
