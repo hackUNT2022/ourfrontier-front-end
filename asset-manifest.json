@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6483c10.css",
-    "main.js": "/static/js/main.306c7c8e.js",
-    "static/media/stars.png": "/static/media/stars.90c266f7d69f1ffb6137.png",
-    "static/media/Circle.svg": "/static/media/Circle.04455e085fdc04a00de3c0c0100316c5.svg",
-    "index.html": "/index.html",
-    "static/media/Logo.svg": "/static/media/Logo.2ec1ba9e609c16e6fe36f2aa7a6ee9c8.svg",
-    "main.c6483c10.css.map": "/static/css/main.c6483c10.css.map",
-    "main.306c7c8e.js.map": "/static/js/main.306c7c8e.js.map"
+    "main.css": "/ourfrontier-front-end/static/css/main.1f049d3d.css",
+    "main.js": "/ourfrontier-front-end/static/js/main.f1de18c2.js",
+    "static/media/stars.png": "/ourfrontier-front-end/static/media/stars.90c266f7d69f1ffb6137.png",
+    "static/media/Circle.svg": "/ourfrontier-front-end/static/media/Circle.04455e085fdc04a00de3c0c0100316c5.svg",
+    "index.html": "/ourfrontier-front-end/index.html",
+    "static/media/Logo.svg": "/ourfrontier-front-end/static/media/Logo.2ec1ba9e609c16e6fe36f2aa7a6ee9c8.svg",
+    "main.1f049d3d.css.map": "/ourfrontier-front-end/static/css/main.1f049d3d.css.map",
+    "main.f1de18c2.js.map": "/ourfrontier-front-end/static/js/main.f1de18c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6483c10.css",
-    "static/js/main.306c7c8e.js"
+    "static/css/main.1f049d3d.css",
+    "static/js/main.f1de18c2.js"
   ]
 }
