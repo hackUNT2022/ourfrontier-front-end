@@ -23,7 +23,7 @@ const Planet = ({name, image}) => {
   }, [])
 
   const instance = axios.create({
-    baseURL: 'http://abnormaltech.net',
+    baseURL: 'https://abnormaltech.net',
     timeout: 5000,
   })
 
