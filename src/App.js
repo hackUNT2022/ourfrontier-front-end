@@ -13,9 +13,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='*' element={<SolarTour />} />
-          <Route path='/glossary' element={<Glossary />} />
-          <Route path='/iss' element={<ISS />} />
-          <Route path='/calculator' element={<Calculator />} />
+          <Route path='ourfrontier-front-end/glossary' element={<Glossary />} />
+          <Route path='ourfrontier-front-end/iss' element={<ISS />} />
+          <Route path='ourfrontier-front-end/calculator' element={<Calculator />} />
         </Routes>
       </Router>
     </div>

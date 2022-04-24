@@ -14,9 +14,9 @@ const Navbar = () => {
             </div>
             <div className='Nav__menu'>
               <div className='Nav__menu_links'>
-                <Link to="/calculator">Distance Calculator</Link>
-                <Link to="/iss">ISS</Link>
-                <Link to="/glossary">Glossary</Link>
+                <Link to="ourfrontier-front-end/calculator">Distance Calculator</Link>
+                <Link to="ourfrontier-front-end/iss">ISS</Link>
+                <Link to="ourfrontier-front-end/glossary">Glossary</Link>
               </div>
             </div>
         </div>
