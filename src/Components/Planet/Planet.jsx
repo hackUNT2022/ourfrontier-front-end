@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./planet.css"
 import axios from 'axios'
+import { blurbs } from '../../Data/Terms';
 
 
 const Planet = ({name, image}) => {
@@ -85,7 +86,7 @@ const Planet = ({name, image}) => {
       let pData = response.data;
       for(const body in pData)
       {
-        if (pData[body][0] == name){
+        if (pData[body][0] === name){
           setPlanetData(pData[body])
           console.log(pData[body])
         }
@@ -115,7 +116,9 @@ const Planet = ({name, image}) => {
       <div className='Planet__container-bottom'>
         <div className='Planet__info_card'> 
           <h2>Additional Info</h2>
+          <p>{blurbs[name]}</p>
         </div>
+        
       </div>
     </section>
   )

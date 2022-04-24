@@ -1,13 +1,6 @@
 
 import Circle from '../../assets/SVG/Circle.svg'
-// import Mercury from '../../assets/SVG/Mercury.svg'
-// import Venus from '../../assets/SVG/Venus.svg'
-// import Earth from '../../assets/SVG/Earth.svg'
-// import Mars from '../../assets/SVG/Mars.svg'
-// import Jupiter from '../../assets/SVG/Jupiter.svg'
-// import Saturn from '../../assets/SVG/Saturn.svg'
-// import Uranus from '../../assets/SVG/Uranus.svg'
-// import Neptune from '../../assets/SVG/Neptune.svg'
+
 
 import './SolarSystem.css'
 

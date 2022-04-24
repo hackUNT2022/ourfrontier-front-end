@@ -2,6 +2,7 @@ import React from 'react'
 import Planet from '../Components/Planet/Planet';
 import SolarSystem from '../Components/SolarSystem/SolarSystem';
 
+
 const planet_pictures = [
   "https://www.nasa.gov/images/content/607196main_messenger_orbit_image20111130_1_4by3_946-710.jpg",
   "https://www.nasa.gov/sites/default/files/thumbnails/image/imagesvenus20191211venus20191211-16.jpeg",
