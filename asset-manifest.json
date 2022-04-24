@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hackUNT2022/ourfrontier-front-end/static/css/main.83827789.css",
+    "main.js": "/hackUNT2022/ourfrontier-front-end/static/js/main.1a331220.js",
+    "static/media/stars.png": "/hackUNT2022/ourfrontier-front-end/static/media/stars.90c266f7d69f1ffb6137.png",
+    "static/media/Circle.svg": "/hackUNT2022/ourfrontier-front-end/static/media/Circle.04455e085fdc04a00de3c0c0100316c5.svg",
+    "index.html": "/hackUNT2022/ourfrontier-front-end/index.html",
+    "static/media/Logo.svg": "/hackUNT2022/ourfrontier-front-end/static/media/Logo.2ec1ba9e609c16e6fe36f2aa7a6ee9c8.svg",
+    "main.83827789.css.map": "/hackUNT2022/ourfrontier-front-end/static/css/main.83827789.css.map",
+    "main.1a331220.js.map": "/hackUNT2022/ourfrontier-front-end/static/js/main.1a331220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83827789.css",
+    "static/js/main.1a331220.js"
+  ]
+}
